@@ -3,7 +3,6 @@ const fs = require("fs");
 const http = require("http");
 const PORT = process.env.PORT || 8080;
 const app = express();
-const nodemailer = require("nodemailer");
 
 app.use(express.json());
 app.use(express.static("build"));
