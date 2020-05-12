@@ -88,6 +88,21 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="row under">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 on-small-screen">
+              <div className="price">
+                AS LOW AS <span>$99</span> mo
+              </div>
+              <div className="images">
+                <img
+                  className="img-fluid"
+                  src="../../images/bath.png"
+                  alt="bath"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="row">
             <div className="top-text">
               <h2>HOW MUCH DOES A WALK-IN TUB COST?</h2>

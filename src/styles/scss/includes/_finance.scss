@@ -3,6 +3,8 @@
 
   header {
     background: #fff;
+    box-shadow: 0 0 5px 10px rgba(20, 20, 20, 0.4);
+    z-index: 10;
 
     .col-4 {
       img {
@@ -32,6 +34,7 @@
   .top {
     background-image: url("../../../images/bg1.jpg");
     background-attachment: fixed;
+    background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -81,7 +84,7 @@
         .content {
           background-color: rgb(44, 42, 42);
           width: 80%;
-          box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
+          box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.4);
           border: 2px solid #fff;
           border-top: none;
           margin: 0;
@@ -118,6 +121,42 @@
             border-radius: 20px;
             padding: 5px 35px;
             box-shadow: 0 0 1px 1px rgba(253, 255, 255, 0.952);
+          }
+        }
+      }
+
+      .under {
+        display: none;
+
+        .on-small-screen {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 35px;
+
+          .price {
+            background: rgb(118, 211, 106);
+            border-radius: 50%;
+            border: 1px solid #fff;
+            width: 90px;
+            height: 90px;
+            font-size: 8px;
+            justify-content: center;
+            padding: 20px 5px 10px 5px;
+            color: #fff;
+            font-weight: bolder;
+            margin-bottom: 20px;
+
+            span {
+              font-size: 20px;
+            }
+          }
+
+          .images {
+            img {
+              max-width: 300px;
+            }
           }
         }
       }
@@ -233,8 +272,10 @@
 
   @media (max-width: 990px) {
     .top {
+      background-image: none;
       .container {
         .left {
+          display: none;
           .price {
             margin-right: 30px;
           }
@@ -243,15 +284,27 @@
             margin-right: 30px;
           }
         }
+
+        .under {
+          display: block;
+        }
       }
     }
   }
 
   @media (max-width: 770px) {
     .top {
-      background-image: none;
-
       .container {
+        width: 90%;
+
+        .right {
+          min-width: 100%;
+
+          .content {
+            width: 100%;
+          }
+        }
+
         .left {
           .price,
           .images {
