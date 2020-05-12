@@ -32,7 +32,7 @@ function App() {
       <div className="top">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 left">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 left">
               <div className="price">
                 AS LOW AS <span>$99</span> mo
               </div>
@@ -44,7 +44,7 @@ function App() {
                 />
               </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 right">
               <div className="content">
                 <div className="form-text">GET A FREE QUOTE</div>
                 <form action="">
