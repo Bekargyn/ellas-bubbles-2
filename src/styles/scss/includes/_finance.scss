@@ -308,6 +308,10 @@
         display: none;
       }
     }
+
+    .bottom {
+      display: none;
+    }
   }
 
   @media (max-width: 768px) {
@@ -330,16 +334,6 @@
           }
         }
       }
-    }
-
-    .middle {
-      .description {
-        min-height: auto;
-      }
-    }
-
-    .bottom {
-      display: none;
     }
 
     header {
