@@ -187,42 +187,42 @@
         }
       }
     }
-  }
 
-  // MIDDLE #########################
-  .middle {
-    text-align: center;
+    // MIDDLE #########################
+    .middle {
+      text-align: center;
 
-    .nameTag {
-      padding: 15px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      min-height: 80px;
-    }
-
-    .description {
-      padding: 15px;
-      min-height: 300px;
-    }
-
-    .view-btn {
-      display: flex;
-      justify-content: center;
-      align-content: flex-end;
-      padding: 10px;
-
-      button {
-        background: rgb(25, 150, 223);
-        color: white;
-        border: 2px solid white;
-        box-shadow: 0 2px 2px 2px rgba(20, 20, 20, 0.2);
-        border-radius: 18px;
-        padding: 10px 25px;
-        font-size: 12px;
+      .nameTag {
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-style: italic;
-        outline: none;
+        min-height: 80px;
+      }
+
+      .description {
+        padding: 15px;
+        min-height: 300px;
+      }
+
+      .view-btn {
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        padding: 10px;
+
+        button {
+          background: rgb(25, 150, 223);
+          color: white;
+          border: 2px solid white;
+          box-shadow: 0 2px 2px 2px rgba(20, 20, 20, 0.2);
+          border-radius: 18px;
+          padding: 10px 25px;
+          font-size: 12px;
+          font-weight: bold;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          font-style: italic;
+          outline: none;
+        }
       }
     }
   }
@@ -239,7 +239,7 @@
 
     input {
       max-width: 60px;
-      border-style: none;
+      outline: none;
     }
   }
 
