@@ -28,7 +28,13 @@ function App() {
             <div className="col-8">
               <div className="phone">
                 <h4>CONTACT</h4>
-                <h4>+ (800) 480-6850</h4>
+                <a
+                  href="tel:18004806850"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h4>+ (800) 480-6850</h4>
+                </a>
               </div>
             </div>
           </div>
