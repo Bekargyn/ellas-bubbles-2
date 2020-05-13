@@ -8,6 +8,11 @@ function App() {
     document.documentElement.scrollTop = 0;
   }
 
+  const getQuote = (e) => {
+    e.preventDefault();
+    console.log("click click");
+  };
+
   return (
     <div className="finance">
       <header>
@@ -83,7 +88,9 @@ function App() {
                     placeholder="Your Zip *"
                   />
                   <br />
-                  <button className="quote-btn">GET QUOTE</button>
+                  <button className="quote-btn" onClick={getQuote}>
+                    GET QUOTE
+                  </button>
                 </form>
               </div>
             </div>
