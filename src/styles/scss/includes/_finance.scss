@@ -5,32 +5,35 @@
   header {
     background: #fff;
     box-shadow: 0 0 5px 4px rgba(20, 20, 20, 0.4);
+    position: relative;
     z-index: 10;
 
-    .col-4 {
-      img {
-        max-width: 140px;
-        height: auto;
-        margin: 25px;
-      }
-    }
-
-    .col-8 {
-      display: flex;
-      justify-content: flex-end;
-
-      .phone {
-        margin: 20px 50px 20px 20px;
-
-        h4 {
-          color: #000;
-          font-size: 1em;
-          padding: 0 10px;
-          text-align: right;
+    .container {
+      .col-4 {
+        img {
+          max-width: 140px;
+          height: auto;
+          margin: 25px;
         }
+      }
 
-        a {
-          color: #000;
+      .col-8 {
+        display: flex;
+        justify-content: flex-end;
+
+        .phone {
+          margin: 20px 50px 20px 20px;
+
+          h4 {
+            color: #000;
+            font-size: 1em;
+            padding: 0 10px;
+            text-align: right;
+          }
+
+          a {
+            color: #000;
+          }
         }
       }
     }

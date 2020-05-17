@@ -133,7 +133,7 @@ function App() {
         <div className="middle">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex flex-column">
                 <div className="img-col1">
                   <img
                     className="img-fluid"
@@ -154,11 +154,11 @@ function App() {
                     stainless adds a sophisticated touch to any design.
                   </p>
                 </div>
-                <div className="view-btn">
+                <div className="view-btn mt-auto">
                   <button>VIEW DETAILS</button>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex flex-column">
                 <div className="img-col1">
                   <img
                     className="img-fluid"
@@ -179,11 +179,11 @@ function App() {
                     accomodate larger individuals or bathrooms.
                   </p>
                 </div>
-                <div className="view-btn">
+                <div className="view-btn mt-auto">
                   <button>VIEW DETAILS</button>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex flex-column">
                 <div className="img-col1">
                   <img
                     className="img-fluid"
@@ -201,7 +201,7 @@ function App() {
                     own home.
                   </p>
                 </div>
-                <div className="view-btn">
+                <div className="view-btn mt-auto">
                   <button>VIEW DETAILS</button>
                 </div>
               </div>
