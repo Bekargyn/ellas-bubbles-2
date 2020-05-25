@@ -1,17 +1,54 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/scss/style.scss";
+import $ from "jquery";
 
 function App() {
+  useEffect(() => {
+    console.log($("form").length);
+
+    $("form").on("submit", (e) => {
+      e.preventDefault();
+
+      const firstName = $("#firstName").val().trim();
+      const lastName = $("#lastName").val().trim();
+      const phone = $("#phone").val().trim();
+      const email = $("#email").val().trim();
+      const zipcode = $("#zipcode").val().trim();
+
+      const data = {
+        firstName,
+        lastName,
+        email,
+        phone,
+        zipcode,
+      };
+      $.post("https://localhost:8080/send", data, function () {
+        console.log("Server received our data!!!");
+        if (
+          firstName === "" ||
+          lastName === "" ||
+          phone === "" ||
+          email === "" ||
+          zipcode === ""
+        ) {
+          alert("Please, fill all inputs!");
+          return false;
+        }
+        $("#firstName").val("");
+        $("#lastName").val("");
+        $("#phone").val("");
+        $("#email").val("");
+        $("#zipcode").val("");
+        alert("Thank you! Your request has been sent!");
+      });
+    });
+  }, []);
+
   function goToTop(e) {
     e.preventDefault();
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
-
-  const getQuote = (e) => {
-    e.preventDefault();
-    console.log("click click");
-  };
 
   return (
     <div className="finance">
@@ -63,12 +100,14 @@ function App() {
                     className="input"
                     type="text"
                     name="firstName"
+                    id="firstName"
                     placeholder="First Name *"
                   />
                   <br />
                   <input
                     className="input"
                     type="text"
+                    id="lastName"
                     name="lastName"
                     placeholder="Last Name *"
                   />
@@ -76,6 +115,7 @@ function App() {
                   <input
                     className="input"
                     type="text"
+                    id="phone"
                     name="usersPhone"
                     placeholder="Phone *"
                   />
@@ -83,6 +123,7 @@ function App() {
                   <input
                     className="input"
                     type="text"
+                    id="email"
                     name="email"
                     placeholder="E-mail *"
                   />
@@ -90,11 +131,12 @@ function App() {
                   <input
                     className="input"
                     type="text"
+                    id="zipcode"
                     name="zipcode"
                     placeholder="Your Zip *"
                   />
                   <br />
-                  <button className="quote-btn" onClick={getQuote}>
+                  <button type="submit" className="quote-btn">
                     GET QUOTE
                   </button>
                 </form>
