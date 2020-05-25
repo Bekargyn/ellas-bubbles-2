@@ -263,12 +263,7 @@ function App() {
       <footer>
         <div className="container">
           <div className="logo">
-            <img
-              type="button"
-              className="img-fluid"
-              src="../../images/logo.png"
-              alt="logo"
-            />
+            <img className="img-fluid" src="../../images/logo.png" alt="logo" />
           </div>
           <div className="info">
             <h6>2101 S. Carpenter St. Chicago, IL, 60608</h6>
